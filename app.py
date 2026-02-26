@@ -81,4 +81,3 @@ with col3:
 # -----------------------------
 st.markdown("---")
 st.subheader("📋 Raw Data")
-st.dataframe(df)
