@@ -35,16 +35,19 @@ metric = st.selectbox(
 )
 
 # เส้นคั่นก่อนกราฟ
+
 st.markdown("---")
 
 # -----------------------------
 # Charts
 # -----------------------------
+
 st.subheader("📈 Data Visualization")
 
 col1, col2, col3 = st.columns(3)
 
 # Line Chart
+
 with col1:
     line_fig = px.line(
         df,
@@ -56,6 +59,7 @@ with col1:
     st.plotly_chart(line_fig, use_container_width=True)
 
 # Bar Chart
+
 with col2:
     bar_fig = px.bar(
         df,
@@ -66,6 +70,7 @@ with col2:
     st.plotly_chart(bar_fig, use_container_width=True)
 
 # Pie Chart
+
 with col3:
     pie_fig = px.pie(
         df,
