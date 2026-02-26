@@ -12,7 +12,7 @@ metric = st.selectbox(
     ["sales", "profit", "customers"]
 )
 
-fig = px.line(
+line_fig = px.line(
     df,
     x="month",
     y=metric,
@@ -36,3 +36,7 @@ pie_fig = px.pie(
 st.plotly_chart(pie_fig)
 
 pie_fig.update_traces(textinfo="percent+label")
+
+st.plotly_chart(line_fig, use_container_width=True)
+st.plotly_chart(bar_fig, use_container_width=True)
+st.plotly_chart(pie_fig, use_container_width=True)
