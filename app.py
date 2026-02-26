@@ -26,3 +26,11 @@ bar_fig = px.bar(
     title=f"{metric.capitalize()} Per Month"
 )
 st.plotly_chart(bar_fig)
+
+pie_fig = px.pie(
+    df,
+    values=metric,
+    names="month",
+    title=f"{metric.capitalize()} Distribution"
+)
+st.plotly_chart(pie_fig)
