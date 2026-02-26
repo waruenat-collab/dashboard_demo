@@ -7,5 +7,10 @@ st.title("📊 Sales Dashboard")
 
 df = pd.read_csv("data.csv")
 
-fig = px.line(df, x="month", y="sales")
+metric = st.selectbox(
+    "Select metric",
+    ["sales", "profit", "customers"]
+)
+
+fig = px.line(df, x="month", y=metric)
 st.plotly_chart(fig)
