@@ -34,3 +34,5 @@ pie_fig = px.pie(
     title=f"{metric.capitalize()} Distribution"
 )
 st.plotly_chart(pie_fig)
+
+pie_fig.update_traces(textinfo="percent+label")
