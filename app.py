@@ -12,5 +12,9 @@ metric = st.selectbox(
     ["sales", "profit", "customers"]
 )
 
-fig = px.line(df, x="month", y=metric)
-st.plotly_chart(fig)
+fig = px.line(
+    df,
+    x="month",
+    y=metric,
+    title=f"{metric.capitalize()} Over Time"
+)
