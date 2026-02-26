@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.title("Sales Dashboard")
+st.set_page_config(page_title="Sales Dashboard", layout="wide")
+st.title("📊 Sales Dashboard")
