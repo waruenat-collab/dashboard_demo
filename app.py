@@ -18,3 +18,11 @@ fig = px.line(
     y=metric,
     title=f"{metric.capitalize()} Over Time"
 )
+
+bar_fig = px.bar(
+    df,
+    x="month",
+    y=metric,
+    title=f"{metric.capitalize()} Per Month"
+)
+st.plotly_chart(bar_fig)
