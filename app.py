@@ -31,7 +31,8 @@ st.subheader("🔧 Select Metric")
 metric_options = ["sales", "profit", "customers"]
 selected_metric = st.selectbox(
     "Choose a metric to visualize",
-    metric_options
+    metric_options,
+    index=0
 )
 
 st.markdown("---")
@@ -86,3 +87,4 @@ with col3:
 # ==================================================
 st.markdown("---")
 st.subheader("📋 Raw Data")
+st.dataframe(df)
