@@ -96,5 +96,5 @@ with col3:
 # Data Table
 # ==================================================
 st.markdown("---")
-st.subheader("📋 Raw Data")
+st.subheader("📋 Raw Data Preview")
 st.dataframe(df)
