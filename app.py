@@ -48,7 +48,7 @@ charts["line"] = px.line(
     df,
     x="month",
     y=selected_metric,
-    title=f"{selected_metric.capitalize()} Over Time",
+    title=f"Monthly {selected_metric.capitalize()} Trend",
     markers=True
 )
 
@@ -56,14 +56,14 @@ charts["bar"] = px.bar(
     df,
     x="month",
     y=selected_metric,
-    title=f"{selected_metric.capitalize()} Per Month"
+    title=f"Monthly {selected_metric.capitalize()} Comparison"
 )
 
 charts["pie"] = px.pie(
     df,
     values=selected_metric,
     names="month",
-    title=f"{selected_metric.capitalize()} Distribution"
+    title=f"{selected_metric.capitalize()} Distribution by Month"
 )
 
 charts["pie"].update_traces(textinfo="percent+label")
