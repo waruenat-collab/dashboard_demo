@@ -98,3 +98,7 @@ with col3:
 st.markdown("---")
 st.subheader("📋 Raw Data Preview")
 st.dataframe(df)
+
+# -----------------------
+# End of dashboard application
+# -----------------------
