@@ -16,7 +16,7 @@ st.markdown("---")
 # Header Section
 # ==================================================
 st.title("📊 Sales Dashboard")
-st.write("Interactive dashboard for sales performance analysis")
+st.write("An interactive dashboard for analyzing sales performance.")
 
 st.markdown("---")
 
