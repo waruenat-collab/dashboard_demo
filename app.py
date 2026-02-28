@@ -73,6 +73,10 @@ charts["pie"].update_traces(textinfo="percent+label")
 # ==================================================
 st.subheader("📈 Data Visualization")
 
+st.caption(
+    "The charts below show trends, comparisons, and distribution of the selected metric."
+)
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
