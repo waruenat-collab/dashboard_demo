@@ -40,6 +40,9 @@ dashboard_demo/
 ├── data.csv        # ไฟล์ข้อมูลยอดขาย
 ├── README.md       # เอกสารอธิบายโปรเจกต์
 └── requirements.txt (ถ้ามี)
+
+---
+
 🧠 อธิบายโค้ด (app.py)
 1. Import Libraries
 import streamlit as st
